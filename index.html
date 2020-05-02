@@ -19,6 +19,8 @@
   
 <p>This is a paragraph.</p>
   
+<center><p>This is a paragraph in a center tag.</p></center>
+  
 <div> 
   This is a div
   <p>This is a paragraph in the div.</p>
@@ -69,6 +71,24 @@
 <p>This linear gradient starts at the top. It starts blue, transitioning to green:</p>
 
 <div id="grad1"></div>
+  
+  
+<h2>JavaScript For Loop that addes makes a varable called text and adds it to the div with the id 'JSdemo'</h2>
+
+<p id="JSdemo"></p>
+
+<script>
+var cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+var text = "";
+var i;
+for (i = 0; i < cars.length; i++) {
+  text += cars[i] + "<br>";
+}
+document.getElementById("JSdemo").innerHTML = text;
+</script>
+
+</body>
+</html>
   
 </body>
 </html>
