@@ -31,6 +31,9 @@
   50%  {background-color: blue;}
   100% {background-color: green;}
 }
+  #skateboardHolder {
+    overflow:hidden;
+  }
   
  #skateboard {
   height: 600px;
@@ -124,8 +127,9 @@
 <div id="animationDiv"></div>
   
   
-<img id="skateboard" src="https://i.dlpng.com/static/png/275146_preview.png">
-  
+<div id="skateboardHolder" >
+ <img id="skateboard" src="https://i.dlpng.com/static/png/275146_preview.png">
+</div>
 
   
 <h3>Linear Gradient - Top to Bottom</h3>
@@ -148,17 +152,15 @@
   
 <!-- Start js for loop scrip   -->
 <script>
-var cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
-var text = "";
-var i;
-for (i = 0; i < cars.length; i++) {
-  text += cars[i] + "<br>";
-}
-document.getElementById("JSdemo").innerHTML = text;
+  var cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+  var text = "";
+  var i;
+  for (i = 0; i < cars.length; i++) {
+    text += cars[i] + "<br>";
+  }
+  document.getElementById("JSdemo").innerHTML = text;
 </script>
 
 </body>
 </html>
   
-</body>
-</html>
