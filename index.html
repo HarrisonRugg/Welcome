@@ -20,8 +20,11 @@
   background-color: red;
   animation-name: example;
   animation-duration: 4s;
+  transition: width 2s;
 }
-
+#animationDiv:hover {
+  width: 300px;
+}
 @keyframes example {
   0%   {background-color: red;}
   25%  {background-color: yellow;}
